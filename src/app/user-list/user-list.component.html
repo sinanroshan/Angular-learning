@@ -1,11 +1,12 @@
 <div class="container">
-  <table>
+  <table class="table">
     <thead>
       <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Phone No.</th>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Phone</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -15,6 +16,12 @@
         <td>{{user.name}}</td>
         <td>{{user.age}}</td>
         <td>{{user.phone}}</td>
+        <td>
+          <div class="d-flex gap-3">
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </div>
+        </td>
       </tr>
       }
     </tbody>

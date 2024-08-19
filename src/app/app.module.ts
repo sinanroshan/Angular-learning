@@ -3,6 +3,7 @@ import { AppComponent } from "./app.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { CommonModule } from "@angular/common";
 import { AppRouterModule } from "./app.routes";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { AppRouterModule } from "./app.routes";
   imports: [
     BrowserModule,
     CommonModule,
-    AppRouterModule
+    AppRouterModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
